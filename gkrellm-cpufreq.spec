@@ -1,4 +1,5 @@
-Summary:	CPU Frequency plugin for Gkrellm 2.0
+Summary:	CPU Frequency plugin for Gkrellm 2.x
+Summary(pl):	Wtyczka czêstotliwo¶ci CPU dla Gkrellma 2.x
 Name:		gkrellm-cpufreq
 Version:	0.5.1
 Release:	1
@@ -8,17 +9,23 @@ Source0:	http://iacs.epfl.ch/~winkelma/gkrellm2-cpufreq/gkrellm2-cpufreq-%{versi
 # Source0-md5:	9e77035a79ea6c8d1fd9f85645a37bb3
 URL:		http://iacs.epfl.ch/~winkelma/gkrellm2-cpufreq/
 BuildRequires:	gkrellm-devel >= 2.0
+BuildRequires:	gtk+2-devel >= 2.0
+BuildRequires:	pkgconfig
 Requires:	gkrellm >= 2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 A plugin for displaying and manipulating CPU frequency.
 
+%description -l pl
+Wtyczka do wy¶wietlania i manipulowania czêstotliwo¶ci± CPU.
+
 %prep
 %setup -q -n gkrellm2-cpufreq-%{version}
 
 %build
-%{__make} FLAGS="%{rpmcflags} -fPIC `pkg-config gtk+-2.0 --cflags`"
+%{__make} \
+	FLAGS="%{rpmcflags} -fPIC `pkg-config gtk+-2.0 --cflags`"
 
 %install
 rm -rf $RPM_BUILD_ROOT

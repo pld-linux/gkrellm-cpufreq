@@ -9,7 +9,7 @@ Source0:	http://iacs.epfl.ch/~winkelma/gkrellm2-cpufreq/gkrellm2-cpufreq-%{versi
 # Source0-md5:	9e77035a79ea6c8d1fd9f85645a37bb3
 URL:		http://iacs.epfl.ch/~winkelma/gkrellm2-cpufreq/
 BuildRequires:	gkrellm-devel >= 2.0
-BuildRequires:	gtk+2-devel >= 2.0
+BuildRequires:	gtk+2-devel >= 1:2.0
 BuildRequires:	pkgconfig
 Requires:	gkrellm >= 2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)

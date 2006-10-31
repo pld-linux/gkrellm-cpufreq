@@ -1,17 +1,18 @@
 Summary:	CPU Frequency plugin for Gkrellm 2.x
 Summary(pl):	Wtyczka czêstotliwo¶ci CPU dla Gkrellma 2.x
 Name:		gkrellm-cpufreq
-Version:	0.5.5
+Version:	0.6
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://iacs.epfl.ch/~winkelma/gkrellm2-cpufreq/gkrellm2-cpufreq-%{version}.tar.gz
-# Source0-md5:	c7fd073c1fd4d32cb76ab131cf29e1fe
+# Source0-md5:	f35f23ed934e3e1f6d449aceee7a18c7
 URL:		http://iacs.epfl.ch/~winkelma/gkrellm2-cpufreq/
 BuildRequires:	gkrellm-devel >= 2.0
 BuildRequires:	gtk+2-devel >= 1:2.0
 BuildRequires:	pkgconfig
 Requires:	gkrellm >= 2.0
+Requires:	cpufrequtils
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -45,9 +46,7 @@ install -d $RPM_BUILD_ROOT%{_libdir}/gkrellm2/plugins
 install -d $RPM_BUILD_ROOT%{_sbindir}
 
 install cpufreq.so $RPM_BUILD_ROOT%{_libdir}/gkrellm2/plugins
-install cpufreqset $RPM_BUILD_ROOT%{_sbindir}
 install cpufreqnextgovernor $RPM_BUILD_ROOT%{_sbindir}
-install cpufreqsetgovernor $RPM_BUILD_ROOT%{_sbindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT

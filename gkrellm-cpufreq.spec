@@ -19,8 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 A plugin for displaying and manipulating CPU frequency.
 
 You might want to add the following to /etc/sudoers:
-<user> ALL = (root) NOPASSWD: /usr/sbin/cpufreqset [0-9]*
-<user> ALL = (root) NOPASSWD: /usr/sbin/cpufreqsetgovernor [a-z]
+
+<user> ALL = (root) NOPASSWD: /usr/sbin/cpufreq-set [0-9]*
 <user> ALL = (root) NOPASSWD: /usr/sbin/cpufreqnextgovernor
 
 %description -l pl
@@ -29,8 +29,7 @@ Wtyczka do wy¶wietlania i manipulowania czêstotliwo¶ci± CPU.
 Aby zezwoliæ u¿ytkownikowi <user> na zmianê czêstotliwo¶ci CPU,
 nale¿y dodaæ poni¿sze linie do pliku /etc/sudoers:
 
-<user> ALL = (root) NOPASSWD: /usr/sbin/cpufreqset [0-9]*
-<user> ALL = (root) NOPASSWD: /usr/sbin/cpufreqsetgovernor [a-z]
+<user> ALL = (root) NOPASSWD: /usr/sbin/cpufreq-set [0-9]*
 <user> ALL = (root) NOPASSWD: /usr/sbin/cpufreqnextgovernor
 
 %prep

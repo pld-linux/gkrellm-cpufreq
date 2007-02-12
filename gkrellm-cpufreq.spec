@@ -1,5 +1,5 @@
 Summary:	CPU Frequency plugin for Gkrellm 2.x
-Summary(pl):	Wtyczka czêstotliwo¶ci CPU dla Gkrellma 2.x
+Summary(pl.UTF-8):   Wtyczka czÄ™stotliwoÅ›ci CPU dla Gkrellma 2.x
 Name:		gkrellm-cpufreq
 Version:	0.6
 Release:	1
@@ -23,11 +23,11 @@ You might want to add the following to /etc/sudoers:
 <user> ALL = (root) NOPASSWD: /usr/sbin/cpufreq-set [0-9]*
 <user> ALL = (root) NOPASSWD: /usr/sbin/cpufreqnextgovernor
 
-%description -l pl
-Wtyczka do wy¶wietlania i manipulowania czêstotliwo¶ci± CPU.
+%description -l pl.UTF-8
+Wtyczka do wyÅ›wietlania i manipulowania czÄ™stotliwoÅ›ciÄ… CPU.
 
-Aby zezwoliæ u¿ytkownikowi <user> na zmianê czêstotliwo¶ci CPU,
-nale¿y dodaæ poni¿sze linie do pliku /etc/sudoers:
+Aby zezwoliÄ‡ uÅ¼ytkownikowi <user> na zmianÄ™ czÄ™stotliwoÅ›ci CPU,
+naleÅ¼y dodaÄ‡ poniÅ¼sze linie do pliku /etc/sudoers:
 
 <user> ALL = (root) NOPASSWD: /usr/sbin/cpufreq-set [0-9]*
 <user> ALL = (root) NOPASSWD: /usr/sbin/cpufreqnextgovernor

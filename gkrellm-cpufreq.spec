@@ -1,5 +1,5 @@
 Summary:	CPU Frequency plugin for Gkrellm 2.x
-Summary(pl.UTF-8):   Wtyczka częstotliwości CPU dla Gkrellma 2.x
+Summary(pl.UTF-8):	Wtyczka częstotliwości CPU dla Gkrellma 2.x
 Name:		gkrellm-cpufreq
 Version:	0.6
 Release:	1

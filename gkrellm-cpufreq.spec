@@ -1,12 +1,12 @@
 Summary:	CPU Frequency plugin for Gkrellm 2.x
 Summary(pl.UTF-8):	Wtyczka częstotliwości CPU dla Gkrellma 2.x
 Name:		gkrellm-cpufreq
-Version:	0.6
+Version:	0.6.1
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://iacs.epfl.ch/~winkelma/gkrellm2-cpufreq/gkrellm2-cpufreq-%{version}.tar.gz
-# Source0-md5:	f35f23ed934e3e1f6d449aceee7a18c7
+# Source0-md5:	ddbe4e9574ae818697271c39191f737d
 URL:		http://iacs.epfl.ch/~winkelma/gkrellm2-cpufreq/
 BuildRequires:	gkrellm-devel >= 2.0
 BuildRequires:	gtk+2-devel >= 1:2.0
